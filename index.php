@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Off Canvas Template for Bootstrap</title>
+    <title>Кинокаф - фильмы и сериалы в HD качестве</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -40,16 +40,36 @@
                 </button>
                 <a class="navbar-brand" href="#">КиноКайф</a>
             </div>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" style="">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Главная</a></li>
                     <li><a href="#about">Инфо</a></li>
-                    <li><a href="#contact">Контакты</a></li>
+					<li><a href="#contact">Контакты</a></li>
+                            <!-- Выпадающий список -->
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Категории <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="#">Все категории</a></li>
+						<li><a href="#">Новинки</a></li>
+						<li><a href="#">Боевики</a></li>
+						<li><a href="#">Комедии</a></li>
+						<li><a href="#">Мелодраммы</a></li>
+						<li><a href="#">Русские сериалы</a></li>
+						<li><a href="#">Топ кинопоиска</a></li>
+						<li><a href="#">Актеры</a></li>
+						<li><a href="#">Режиссеры</a></li>
+						<li><a href="#">Студии</a></li>
+						<li><a href="#">Подборки</a></li>
+					  </ul>
+					</li>
+					<li><a href="#about">Вход</a></li>
+                    <li><a href="#contact">Регистрация</a></li>
                 </ul>
+				<!--
 				<ul class="nav navbar-nav menu-login">
                     <li><a href="#about">Вход</a></li>
                     <li><a href="#contact">Регистрация</a></li>
-                </ul>
+                </ul>-->
             </div>
             <!-- /.nav-collapse -->
         </div>
@@ -62,6 +82,7 @@
 		        <p class="pull-right visible-xs">
                     <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
                 </p>-->
+				<div class="row"><div class="col-12 page-title"><h1>КиноКайф - смотрите новые фильмы и сериалы в хорошем качестве бесплатно</h1></div></div>
                 <div class="hidden-sm hidden-xs">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -117,18 +138,20 @@
         <div class="row row-offcanvas row-offcanvas-right">
 			
             <div class="hidden-xs hidden-sm col-md-3 col-lg-3 sidebar-offcanvas" id="sidebar" role="navigation">
+			<div class="col-12 category-title"><h3>Меню</h3></div>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Новинки<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-new-50.png"></span></a>
-                    <a href="#" class="list-group-item active">Боевики<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-assault-rifle-50.png"></span></a>
-                    <a href="#" class="list-group-item">Комедии<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-smiling-50.png"></span></a>
-                    <a href="#" class="list-group-item">Мелодраммы<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-heart-50.png"></span></a>
-                    <a href="#" class="list-group-item">Русские сериалы<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-dragon-fruit-50.png"></span></a>
-                    <a href="#" class="list-group-item">Сериалы<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-dragon-fruit-50.png"></span></a>
-                    <a href="#" class="list-group-item">Топ кинопоиска<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-rating-50.png"></span></a>
-                    <a href="#" class="list-group-item">Актеры<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-human-head-50.png"></span></a>
-                    <a href="#" class="list-group-item">Режиссеры<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-school-director-50.png"></span></a>
-                    <a href="#" class="list-group-item">Студии<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-movie-projector-50.png"></span></a>
-					<a href="#" class="list-group-item">Подборки<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-good-quality-50.png"></span></a>
+					<a href="#" class="list-group-item">Все категории<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-new-50.png"></span>--></a>
+                    <a href="#" class="list-group-item">Новинки<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-new-50.png"></span>--></a>
+                    <a href="#" class="list-group-item active">Боевики<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-assault-rifle-50.png"></span>--></a>
+                    <a href="#" class="list-group-item">Комедии<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-smiling-50.png"></span>--></a>
+                    <a href="#" class="list-group-item">Мелодраммы<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-heart-50.png"></span>--></a>
+                    <a href="#" class="list-group-item">Русские сериалы<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-dragon-fruit-50.png"></span>--></a>
+                    <a href="#" class="list-group-item">Сериалы<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-dragon-fruit-50.png"></span>--></a>
+                    <a href="#" class="list-group-item">Топ кинопоиска<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-rating-50.png"></span>--></a>
+                    <a href="#" class="list-group-item">Актеры<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-human-head-50.png"></span>--></a>
+                    <a href="#" class="list-group-item">Режиссеры<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-school-director-50.png"></span>--></a>
+                    <a href="#" class="list-group-item">Студии<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-movie-projector-50.png"></span>--></a>
+					<a href="#" class="list-group-item">Подборки<!--<span class="menu-icons"><img src="./upload/images/menu-icons/icons8-good-quality-50.png"></span>--></a>
                 </div>
             </div>
             <!--/span-->
@@ -146,6 +169,7 @@
 						<span class="video-rating-kinopoisk"><img src="./upload/images/kinopoisk_logo.png" alt="Рейтинг Кинопоиска" title="Рейтинг Кинопоиска"> 6.9</span>
 						<span class="video-rating-imdb"><img src="./upload/images/imdb_logo.png" alt="Рейтинг IMDB" title="Рейтинг IMDB"> 7.9</span>
 						<span class="video-see-later"><img src="./upload/images/timer_logo.png" alt="Продолжительность" title="Продолжительность"> 2:31</span>
+						<span class="video-see-later watch-later"><img src="./upload/images/heart.png" alt="В избранное" title="В избранное"></span>
 						</div>
 						<!--
 						<div class="video-rating">
@@ -350,9 +374,10 @@
 
         <footer>
         
-		<div class="footer video-panel">
+		<div class="footer video-panel container-fluid">
 		<div class="row">
-		<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+		<div class="col-12 category-title"><ul><h3>Информация</h3></ul></div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 		<ul><span class="footer-blog-title"><h5>Пользователям и партнёрам</h5></span>
 			<li><a href="#">Все о подписках</a></li>
 			<li><a href="#">Бонусы и подарки</a></li>
@@ -361,7 +386,7 @@
 			<li><a href="#">Политика обработки ПД</a></li>
 		</ul>
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 		<ul><span class="footer-blog-title"><h5>Пользователям и партнёрам</h5></span>
 			<li><a href="#">О проекте</a></li>
 			<li><a href="#">Обратная связь</a></li>
@@ -370,7 +395,7 @@
 			<li><a href="#">MoviesChain</a></li>
 		</ul>
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 		<ul><span class="footer-blog-title"><h5>Пользователям и партнёрам</h5></span>
 			<li><a href="#">Вакансии</a></li>
 			<li><a href="#">FAQ</a></li>
@@ -393,6 +418,13 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/offcanvas.js"></script>
+	<script>
+	$(document).ready(function () {
+	$(".navbar-toggle").on("click", function () {
+		$(this).toggleClass("active");
+	  });
+	});
+	</script>
 </body>
 
 </html>
